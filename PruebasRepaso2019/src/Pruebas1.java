@@ -6,22 +6,9 @@ import java.util.LinkedList;
 public class Pruebas1 {
 
 	public Pruebas1() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) {
-		/*
-		 The java.util.List interface
-		A list is an ordered collection. Lists allow precise control over the positioning of 
-		individual elements within the data structure. It is possible to add, retrieve and remove 
-		elements at specified positions. The standard behaviour for lists is to allow duplicates. 
-		Implementations of List include:
-			
-		ArrayList - uses array-based storage.
-		LinkedList - uses linked-list storage
-		 */
-		
-		// DE LA INTERFASE COLLECTION
 		System.out.println("____________________________Lists________________________________");
 
 		LinkedList<String> l = new LinkedList<String>();
@@ -54,15 +41,7 @@ public class Pruebas1 {
 	      }
 	    System.out.println();
 	    System.out.println(l.contains("xxx"));
-	    /* 	A set does not allow duplicates. 
-	     	Implementations of Set include:
-	     	
-	     	HashSet - an unordered and hash-based implementation.
-			LinkedHashSet - extends HashSet to provide predictable iteration order, 
-			which is the order in which elements were inserted.
-	    */
-	    
-	 // DE LA INTERFASE COLLECTION
+
 	    System.out.println("____________________________Sets________________________________");
 
 	    LinkedHashSet<String> s = new LinkedHashSet<String>();
@@ -81,26 +60,8 @@ public class Pruebas1 {
 	         System.out.print(v);
 	      }
 	      
-	   // DE LA INTERFASE MAP
 	      System.out.println("____________________________MAPs________________________________");
 
-	      /* The java.util.Map interface
-	       * 
-	      Maps map keys to values. 
-	      When an object is added to a map it is associated with the specified key.
-	      A map cannot contain duplicate keys.
-	      A key can only be associated with one value at a time.
-	      
-	      Implementations of Map include:
-
-			HashMap - an unordered and hash-based implementation.
-			LinkedHashMap - extends HashMap to provide predictable iteration order. 
-							The ordering can be specified at creation time as insertion-order or 
-							access-order.
-			TreeMap - a NavigableMap that provides predictable iteration order. The iteration 
-						order is determined by the natural ordering of the keys (based on 
-						Comparable.compareTo()) or by a Comparator provided at creation time
-			*/
 	      LinkedHashMap<String, String> m = new LinkedHashMap<String, String>();
 	      System.out.println(m.size() + " " + m.isEmpty());
 	      System.out.print(m.put("key1", "value1"));
